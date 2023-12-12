@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogou na Europa</title>
+</head>
+<body>
+    <h1>Brasilerio??????????</h1>
+    País de moradia: <input type="string" id="nan">
+    <input type="button" value="Verificar" onclick="resposta()">
+    <div id = res>
+
+    </div>
+    <script>
+       function resposta() {
+            var nancio = window.document.querySelector('input#nan')
+            var res = window.document.querySelector('div#res')
+            var r = String(nancio.value)
+            res.innerHTML = `<p>Você mora no país ${r}</p>`
+                if (r != 'Brasil' && r != 'brasil') {
+                     res.innerHTML += '<p> Tu é Estrangeiro</p>'
+                } else {
+                    res.innerHTML += '<p> Tu é um Brasileiro seu macaco</p>'
+                }
+        }
+    </script>
+</body>
+</html>
